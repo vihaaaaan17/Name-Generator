@@ -1,20 +1,21 @@
 Name Producer Model
-The Name Producer Model generates names using a combination of a Bigrams model and a Multilayer Perceptron (MLP). This README provides an overview of the model, its components, and instructions for usage.
+The Name Producer Model generates names using a combination of a Bigrams model and a Multilayer Perceptron (MLP).
+This README provides an overview of the model, its components, and instructions for usage.
 
 Overview
-The Name Producer Model is designed to generate names based on a dataset of existing names. It uses a Bigrams model to capture the statistical relationships between character pairs and a Multilayer Perceptron (MLP) to predict the next character in a sequence given a context of three previous characters.
+The Name Producer Model is designed to generate names based on a dataset of existing names. 
+It uses a Bigrams model to capture the statistical relationships between character pairs and a Multilayer Perceptron (MLP) to predict the next character in a sequence given a context of three previous characters.
 
 Components
 Bigrams Model:
-
 Utilizes the frequency of character pairs (bigrams) in the dataset to generate probabilities for the next character.
 Provides initial context and basic statistical predictions.
-Multilayer Perceptron (MLP):
 
+Multilayer Perceptron (MLP):
 Takes a context of three characters and predicts the next character in the sequence.
 Trained using backpropagation and stochastic gradient descent to optimize prediction accuracy.
-Training and Generation:
 
+Training and Generation:
 Training: The model is trained on a dataset of names, learning the relationships between characters. The included names.txt dataset, as an example, has the most common 32K names takes from ssa.gov for the year 2018. It looks like:
 
 emma
